@@ -44,12 +44,12 @@ CABS                                00000000    00000000 =           0. bytes (A
      00000083  l_HOME                          
      00000100  l_IRAM                          
      00000100  l_SSEG                          
-     000006D0  l_CODE                          
+     00000C2B  l_CODE                          
      00008000  s_HOME                          
      00008083  s_GSINIT                        
      0000809D  s_GSFINAL                       
      000080A0  s_CODE                          
-     00008770  s_INITIALIZER                   
+     00008CCB  s_INITIALIZER                   
 
 ASxxxx Linker V03.00 + NoICE + sdld,  page 2.
 Hexadecimal  [32-Bits]
@@ -112,59 +112,104 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-CODE                                000080A0    000006D0 =        1744. bytes (REL,CON)
+CODE                                000080A0    00000C2B =        3115. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
      000080A0  _main                              main
-     000080A7  _AWU_Config                        stdafx
-     000080B9  _LSIMeasurment                     stdafx
-     000080EC  _AWU_DeInit                        stm8s_awu
-     000080FB  _AWU_Init                          stm8s_awu
-     00008145  _AWU_Cmd                           stm8s_awu
-     0000815A  _AWU_LSICalibrationConfig          stm8s_awu
-     000081A2  _AWU_IdleModeEnable                stm8s_awu
-     000081B0  _AWU_GetFlagStatus                 stm8s_awu
-     000081C3  _APR_Array                         stm8s_awu
-     000081D4  _TBR_Array                         stm8s_awu
-     000081E5  _CLK_DeInit                        stm8s_clk
-     00008227  _CLK_FastHaltWakeUpCmd             stm8s_clk
-     0000823C  _CLK_HSECmd                        stm8s_clk
-     0000824E  _CLK_HSICmd                        stm8s_clk
-     00008260  _CLK_LSICmd                        stm8s_clk
-     00008275  _CLK_CCOCmd                        stm8s_clk
-     00008287  _CLK_ClockSwitchCmd                stm8s_clk
-     0000829C  _CLK_SlowActiveHaltWakeUpCmd       stm8s_clk
-     000082B1  _CLK_PeripheralClockConfig         stm8s_clk
-     00008309  _CLK_ClockSwitchConfig             stm8s_clk
-     000083D3  _CLK_HSIPrescalerConfig            stm8s_clk
-     000083E5  _CLK_CCOConfig                     stm8s_clk
-     000083FB  _CLK_ITConfig                      stm8s_clk
-     0000844B  _CLK_SYSCLKConfig                  stm8s_clk
-     00008485  _CLK_SWIMConfig                    stm8s_clk
-     00008497  _CLK_ClockSecuritySystemEnable     stm8s_clk
-     0000849C  _CLK_GetSYSCLKSource               stm8s_clk
-     000084A1  _CLK_GetClockFreq                  stm8s_clk
-     000084F9  _CLK_AdjustHSICalibrationValue     stm8s_clk
-     00008506  _CLK_SYSCLKEmergencyClear          stm8s_clk
-     0000850B  _CLK_GetFlagStatus                 stm8s_clk
-     00008551  _CLK_GetITStatus                   stm8s_clk
-     00008578  _CLK_ClearITPendingBit             stm8s_clk
-     0000858F  _HSIDivFactor                      stm8s_clk
-     00008593  _CLKPrescTable                     stm8s_clk
-     0000859B  _GPIO_DeInit                       stm8s_gpio
-     000085AE  _GPIO_Init                         stm8s_gpio
-     0000862E  _GPIO_Write                        stm8s_gpio
-     00008634  _GPIO_WriteHigh                    stm8s_gpio
-     0000863B  _GPIO_WriteLow                     stm8s_gpio
-     00008649  _GPIO_WriteReverse                 stm8s_gpio
-     00008650  _GPIO_ReadOutputData               stm8s_gpio
-     00008654  _GPIO_ReadInputData                stm8s_gpio
-     00008659  _GPIO_ReadInputPin                 stm8s_gpio
-     00008660  _GPIO_ExternalPullUpConfig         stm8s_gpio
-     0000867B  __mulint                           _mulint
-     000086D1  __divulong                         _divulong
+     000080E2  _AWU_Config                        stdafx
+     000080F4  _LSIMeasurment                     stdafx
+     00008198  _AWU_DeInit                        stm8s_awu
+     000081A7  _AWU_Init                          stm8s_awu
+     000081F1  _AWU_Cmd                           stm8s_awu
+     00008206  _AWU_LSICalibrationConfig          stm8s_awu
+     0000824E  _AWU_IdleModeEnable                stm8s_awu
+     0000825C  _AWU_GetFlagStatus                 stm8s_awu
+     0000826F  _APR_Array                         stm8s_awu
+     00008280  _TBR_Array                         stm8s_awu
+     00008291  _CLK_DeInit                        stm8s_clk
+     000082D3  _CLK_FastHaltWakeUpCmd             stm8s_clk
+     000082E8  _CLK_HSECmd                        stm8s_clk
+     000082FA  _CLK_HSICmd                        stm8s_clk
+     0000830C  _CLK_LSICmd                        stm8s_clk
+     00008321  _CLK_CCOCmd                        stm8s_clk
+     00008333  _CLK_ClockSwitchCmd                stm8s_clk
+     00008348  _CLK_SlowActiveHaltWakeUpCmd       stm8s_clk
+     0000835D  _CLK_PeripheralClockConfig         stm8s_clk
+     000083B5  _CLK_ClockSwitchConfig             stm8s_clk
+     0000847F  _CLK_HSIPrescalerConfig            stm8s_clk
+     00008491  _CLK_CCOConfig                     stm8s_clk
+     000084A7  _CLK_ITConfig                      stm8s_clk
+     000084F7  _CLK_SYSCLKConfig                  stm8s_clk
+     00008531  _CLK_SWIMConfig                    stm8s_clk
+     00008543  _CLK_ClockSecuritySystemEnable     stm8s_clk
+     00008548  _CLK_GetSYSCLKSource               stm8s_clk
+     0000854D  _CLK_GetClockFreq                  stm8s_clk
+     000085A5  _CLK_AdjustHSICalibrationValue     stm8s_clk
+     000085B2  _CLK_SYSCLKEmergencyClear          stm8s_clk
+     000085B7  _CLK_GetFlagStatus                 stm8s_clk
+     000085FD  _CLK_GetITStatus                   stm8s_clk
+     00008624  _CLK_ClearITPendingBit             stm8s_clk
+     0000863B  _HSIDivFactor                      stm8s_clk
+     0000863F  _CLKPrescTable                     stm8s_clk
+     00008647  _GPIO_DeInit                       stm8s_gpio
+     0000865A  _GPIO_Init                         stm8s_gpio
+     000086DA  _GPIO_Write                        stm8s_gpio
+     000086E0  _GPIO_WriteHigh                    stm8s_gpio
+     000086E7  _GPIO_WriteLow                     stm8s_gpio
+     000086F5  _GPIO_WriteReverse                 stm8s_gpio
+     000086FC  _GPIO_ReadOutputData               stm8s_gpio
+     00008700  _GPIO_ReadInputData                stm8s_gpio
+     00008705  _GPIO_ReadInputPin                 stm8s_gpio
+     0000870C  _GPIO_ExternalPullUpConfig         stm8s_gpio
+     00008727  _TIM3_DeInit                       stm8s_tim3
+     00008770  _TIM3_TimeBaseInit                 stm8s_tim3
+     00008789  _TIM3_OC1Init                      stm8s_tim3
+     000087C7  _TIM3_OC2Init                      stm8s_tim3
 ASxxxx Linker V03.00 + NoICE + sdld,  page 9.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080A0    00000C2B =        3115. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00008805  _TIM3_ICInit                       stm8s_tim3
+     00008838  _TIM3_PWMIConfig                   stm8s_tim3
+     000088B7  _TIM3_Cmd                          stm8s_tim3
+     000088C9  _TIM3_ITConfig                     stm8s_tim3
+     000088EB  _TIM3_UpdateDisableConfig          stm8s_tim3
+     00008900  _TIM3_UpdateRequestConfig          stm8s_tim3
+     00008915  _TIM3_SelectOnePulseMode           stm8s_tim3
+     0000892A  _TIM3_PrescalerConfig              stm8s_tim3
+     00008937  _TIM3_ForcedOC1Config              stm8s_tim3
+     00008944  _TIM3_ForcedOC2Config              stm8s_tim3
+     00008951  _TIM3_ARRPreloadConfig             stm8s_tim3
+     00008963  _TIM3_OC1PreloadConfig             stm8s_tim3
+     00008978  _TIM3_OC2PreloadConfig             stm8s_tim3
+     0000898D  _TIM3_GenerateEvent                stm8s_tim3
+     00008994  _TIM3_OC1PolarityConfig            stm8s_tim3
+     000089A9  _TIM3_OC2PolarityConfig            stm8s_tim3
+     000089BE  _TIM3_CCxCmd                       stm8s_tim3
+     000089ED  _TIM3_SelectOCxM                   stm8s_tim3
+     00008A17  _TIM3_SetCounter                   stm8s_tim3
+     00008A2A  _TIM3_SetAutoreload                stm8s_tim3
+     00008A3D  _TIM3_SetCompare1                  stm8s_tim3
+     00008A50  _TIM3_SetCompare2                  stm8s_tim3
+     00008A63  _TIM3_SetIC1Prescaler              stm8s_tim3
+     00008A70  _TIM3_SetIC2Prescaler              stm8s_tim3
+     00008A7D  _TIM3_GetCapture1                  stm8s_tim3
+     00008AAA  _TIM3_GetCapture2                  stm8s_tim3
+     00008AD7  _TIM3_GetCounter                   stm8s_tim3
+     00008AF9  _TIM3_GetPrescaler                 stm8s_tim3
+     00008AFE  _TIM3_GetFlagStatus                stm8s_tim3
+     00008B28  _TIM3_ClearFlag                    stm8s_tim3
+     00008B3D  _TIM3_GetITStatus                  stm8s_tim3
+     00008B5B  _TIM3_ClearITPendingBit            stm8s_tim3
+     00008BD6  __mulint                           _mulint
+     00008C2C  __divulong                         _divulong
+ASxxxx Linker V03.00 + NoICE + sdld,  page 10.
 
 Files Linked                              [ module(s) ]
 
@@ -173,6 +218,7 @@ obj\Debug\src\stdafx.rel                  [  ]
 obj\Debug\src\stm8s_awu.rel               [  ]
 obj\Debug\src\stm8s_clk.rel               [  ]
 obj\Debug\src\stm8s_gpio.rel              [  ]
+obj\Debug\src\stm8s_tim3.rel              [  ]
 
 
 Libraries Linked                          [ object file ]
@@ -180,7 +226,7 @@ Libraries Linked                          [ object file ]
 C:\Program Files\SDCC\lib\stm8\stm8.lib   [ _mulint.rel ]
 C:\Program Files\SDCC\lib\stm8\stm8.lib   [ _divulong.rel ]
 
-ASxxxx Linker V03.00 + NoICE + sdld,  page 10.
+ASxxxx Linker V03.00 + NoICE + sdld,  page 11.
 
 User Base Address Definitions
 

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="touch-sense-example" />
+		<Option pch_mode="2" />
+		<Option compiler="sdcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/main.hex" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="obj/Debug/" />
+				<Option type="5" />
+				<Option compiler="sdcc" />
+				<ExtraCommands>
+					<Add after="C:\Program Files\STMicroelectronics\st_toolset\stvp\STVP_CmdLine.exe -BoardName=ST-LINK -Port=USB -ProgMode=SWIM -Device=STM8S105x6 -readData -readOption -no_progData -no_progOption -no_loop -no_log -FileProg=.\bin\Debug\main.hex" />
+					<Mode after="always" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/touch-sense-example" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="sdcc" />
+				<Compiler>
+					<Add option="--opt-code-size" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-mstm8" />
+			<Add option="--verbose" />
+			<Add directory="inc" />
+			<Add directory="inc/stm-touch-lib" />
+		</Compiler>
+		<Linker>
+			<Add library="C:\Program Files\SDCC\lib\stm8\stm8.lib" />
+		</Linker>
+		<Unit filename="README.md" />
+		<Unit filename="inc/stdafx.h" />
+		<Unit filename="inc/stm-touch-lib/stm8_tsl_api.h" />
+		<Unit filename="inc/stm-touch-lib/stm8_tsl_checkconfig.h" />
+		<Unit filename="inc/stm-touch-lib/stm8_tsl_conf_RC_TOADAPT.h">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="inc/stm-touch-lib/stm8_tsl_internal.h" />
+		<Unit filename="inc/stm-touch-lib/stm8_tsl_multichannelkey.h" />
+		<Unit filename="inc/stm-touch-lib/stm8_tsl_rc_acquisition.h" />
+		<Unit filename="inc/stm-touch-lib/stm8_tsl_services.h" />
+		<Unit filename="inc/stm-touch-lib/stm8_tsl_singlechannelkey.h" />
+		<Unit filename="inc/stm-touch-lib/stm8_tsl_timebase.h" />
+		<Unit filename="inc/stm8_tsl_conf.h" />
+		<Unit filename="inc/stm8s.h" />
+		<Unit filename="inc/stm8s_adc1.h" />
+		<Unit filename="inc/stm8s_adc2.h" />
+		<Unit filename="inc/stm8s_awu.h" />
+		<Unit filename="inc/stm8s_beep.h" />
+		<Unit filename="inc/stm8s_can.h" />
+		<Unit filename="inc/stm8s_clk.h" />
+		<Unit filename="inc/stm8s_conf.h" />
+		<Unit filename="inc/stm8s_exti.h" />
+		<Unit filename="inc/stm8s_flash.h" />
+		<Unit filename="inc/stm8s_gpio.h" />
+		<Unit filename="inc/stm8s_i2c.h" />
+		<Unit filename="inc/stm8s_it.h" />
+		<Unit filename="inc/stm8s_itc.h" />
+		<Unit filename="inc/stm8s_iwdg.h" />
+		<Unit filename="inc/stm8s_rst.h" />
+		<Unit filename="inc/stm8s_spi.h" />
+		<Unit filename="inc/stm8s_tim1.h" />
+		<Unit filename="inc/stm8s_tim2.h" />
+		<Unit filename="inc/stm8s_tim3.h" />
+		<Unit filename="inc/stm8s_tim4.h" />
+		<Unit filename="inc/stm8s_tim5.h" />
+		<Unit filename="inc/stm8s_tim6.h" />
+		<Unit filename="inc/stm8s_uart1.h" />
+		<Unit filename="inc/stm8s_uart2.h" />
+		<Unit filename="inc/stm8s_uart3.h" />
+		<Unit filename="inc/stm8s_wwdg.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/stm-touch-lib/stm8_tsl_api.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/stm-touch-lib/stm8_tsl_multichannelkey.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/stm-touch-lib/stm8_tsl_rc_acquisition.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/stm-touch-lib/stm8_tsl_services.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/stm-touch-lib/stm8_tsl_singlechannelkey.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/stm-touch-lib/stm8_tsl_timebase.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/stm8s_adc1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/stm8s_adc2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/stm8s_awu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/stm8s_beep.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/stm8s_can.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/stm8s_clk.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/stm8s_exti.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/stm8s_flash.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/stm8s_gpio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/stm8s_i2c.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/stm8s_itc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/stm8s_iwdg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/stm8s_rst.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/stm8s_spi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/stm8s_tim1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/stm8s_tim2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/stm8s_tim3.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/stm8s_tim4.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/stm8s_tim5.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/stm8s_tim6.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/stm8s_uart1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/stm8s_uart2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/stm8s_uart3.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/stm8s_wwdg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

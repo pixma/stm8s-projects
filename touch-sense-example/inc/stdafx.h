@@ -1,0 +1,6 @@
+#ifndef STDAFX_H_INCLUDED
+#define STDAFX_H_INCLUDED
+
+
+
+#endif // STDAFX_H_INCLUDED

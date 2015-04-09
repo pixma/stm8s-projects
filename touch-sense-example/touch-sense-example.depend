@@ -1,0 +1,112 @@
+# depslib dependency file v1.0
+1428572672 source:d:\repos\stm8-repo-play\touch-sense-example\main.c
+	"stm8s.h"
+	"stdafx.h"
+
+1428054892 d:\repos\stm8-repo-play\touch-sense-example\inc\stm8s.h
+	<stdint.h>
+	"stm8s_conf.h"
+	<intrins.h>
+	<intrinsics.h>
+
+1394195450 d:\repos\stm8-repo-play\touch-sense-example\inc\stm8s_conf.h
+	"stm8s.h"
+	"stm8s_adc1.h"
+	"stm8s_adc2.h"
+	"stm8s_awu.h"
+	"stm8s_beep.h"
+	"stm8s_can.h"
+	"stm8s_clk.h"
+	"stm8s_exti.h"
+	"stm8s_flash.h"
+	"stm8s_gpio.h"
+	"stm8s_i2c.h"
+	"stm8s_itc.h"
+	"stm8s_iwdg.h"
+	"stm8s_rst.h"
+	"stm8s_spi.h"
+	"stm8s_tim1.h"
+	"stm8s_tim2.h"
+	"stm8s_tim3.h"
+	"stm8s_tim4.h"
+	"stm8s_tim5.h"
+	"stm8s_tim6.h"
+	"stm8s_uart1.h"
+	"stm8s_uart2.h"
+	"stm8s_uart3.h"
+	"stm8s_wwdg.h"
+
+1413892940 d:\repos\stm8-repo-play\touch-sense-example\inc\stm8s_adc1.h
+	"stm8s.h"
+
+1413892940 d:\repos\stm8-repo-play\touch-sense-example\inc\stm8s_adc2.h
+	"stm8s.h"
+
+1413892940 d:\repos\stm8-repo-play\touch-sense-example\inc\stm8s_awu.h
+	"stm8s.h"
+
+1413892940 d:\repos\stm8-repo-play\touch-sense-example\inc\stm8s_beep.h
+	"stm8s.h"
+
+1413892940 d:\repos\stm8-repo-play\touch-sense-example\inc\stm8s_can.h
+	"stm8s.h"
+
+1413892940 d:\repos\stm8-repo-play\touch-sense-example\inc\stm8s_clk.h
+	"stm8s.h"
+
+1413892940 d:\repos\stm8-repo-play\touch-sense-example\inc\stm8s_exti.h
+	"stm8s.h"
+
+1413892940 d:\repos\stm8-repo-play\touch-sense-example\inc\stm8s_flash.h
+	"stm8s.h"
+
+1413892940 d:\repos\stm8-repo-play\touch-sense-example\inc\stm8s_gpio.h
+	"stm8s.h"
+
+1413892940 d:\repos\stm8-repo-play\touch-sense-example\inc\stm8s_i2c.h
+	"stm8s.h"
+
+1413892940 d:\repos\stm8-repo-play\touch-sense-example\inc\stm8s_itc.h
+	"stm8s.h"
+
+1413892940 d:\repos\stm8-repo-play\touch-sense-example\inc\stm8s_iwdg.h
+	"stm8s.h"
+
+1413892940 d:\repos\stm8-repo-play\touch-sense-example\inc\stm8s_rst.h
+	"stm8s.h"
+
+1413892940 d:\repos\stm8-repo-play\touch-sense-example\inc\stm8s_spi.h
+	"stm8s.h"
+
+1413892940 d:\repos\stm8-repo-play\touch-sense-example\inc\stm8s_tim1.h
+	"stm8s.h"
+
+1413892940 d:\repos\stm8-repo-play\touch-sense-example\inc\stm8s_tim2.h
+	"stm8s.h"
+
+1413892940 d:\repos\stm8-repo-play\touch-sense-example\inc\stm8s_tim3.h
+	"stm8s.h"
+
+1413892940 d:\repos\stm8-repo-play\touch-sense-example\inc\stm8s_tim4.h
+	"stm8s.h"
+
+1413892940 d:\repos\stm8-repo-play\touch-sense-example\inc\stm8s_tim5.h
+	"stm8s.h"
+
+1413892940 d:\repos\stm8-repo-play\touch-sense-example\inc\stm8s_tim6.h
+	"stm8s.h"
+
+1413892940 d:\repos\stm8-repo-play\touch-sense-example\inc\stm8s_uart1.h
+	"stm8s.h"
+
+1413892940 d:\repos\stm8-repo-play\touch-sense-example\inc\stm8s_uart2.h
+	"stm8s.h"
+
+1413892940 d:\repos\stm8-repo-play\touch-sense-example\inc\stm8s_uart3.h
+	"stm8s.h"
+
+1413892940 d:\repos\stm8-repo-play\touch-sense-example\inc\stm8s_wwdg.h
+	"stm8s.h"
+
+1428572663 d:\repos\stm8-repo-play\touch-sense-example\inc\stdafx.h
+

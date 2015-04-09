@@ -12,6 +12,10 @@ Symbol Table
     _AWU_LSICalibrationConfig                                      ****** GX
     _CLK_GetClockFreq                                              ****** GX
   7 _LSIMeasurment                                                 000012 GR
+    _TIM3_ClearFlag                                                ****** GX
+    _TIM3_Cmd                                                      ****** GX
+    _TIM3_GetCapture1                                              ****** GX
+    _TIM3_ICInit                                                   ****** GX
     __divulong                                                     ****** GX
 
 
@@ -27,7 +31,7 @@ Area Table
    4 HOME                                       size      0   flags    0
    5 GSINIT                                     size      0   flags    0
    6 GSFINAL                                    size      0   flags    0
-   7 CODE                                       size     45   flags    0
+   7 CODE                                       size     B6   flags    0
    8 INITIALIZER                                size      0   flags    0
    9 CABS                                       size      0   flags    8
 

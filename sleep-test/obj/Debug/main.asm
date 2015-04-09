@@ -1,7 +1,7 @@
 ;--------------------------------------------------------
 ; File Created by SDCC : free open source ANSI-C Compiler
 ; Version 3.4.0 #8981 (Apr  5 2014) (MINGW32)
-; This file was generated Thu Apr 09 14:07:03 2015
+; This file was generated Thu Apr 09 17:30:57 2015
 ;--------------------------------------------------------
 	.module main
 	.optsdcc -mstm8
@@ -11,6 +11,11 @@
 ;--------------------------------------------------------
 	.globl _main
 	.globl _AWU_Config
+	.globl _CLK_HSIPrescalerConfig
+	.globl _GPIO_WriteLow
+	.globl _GPIO_WriteHigh
+	.globl _GPIO_Init
+	.globl _GPIO_DeInit
 ;--------------------------------------------------------
 ; ram data
 ;--------------------------------------------------------
@@ -112,13 +117,56 @@ __sdcc_program_startup:
 ;	 function main
 ;	-----------------------------------------
 _main:
-;	main.c: 13: AWU_Config();
+;	main.c: 10: GPIO_DeInit(GPIOD);
+	push	#0x0f
+	push	#0x50
+	call	_GPIO_DeInit
+	addw	sp, #2
+;	main.c: 16: AWU_Config();
 	call	_AWU_Config
-;	main.c: 17: while( 1 ){
-00102$:
-;	main.c: 27: halt();/* Program halted */
+;	main.c: 18: GPIO_Init(GPIOD, GPIO_PIN_0, GPIO_MODE_OUT_PP_LOW_FAST);
+	push	#0xe0
+	push	#0x01
+	push	#0x0f
+	push	#0x50
+	call	_GPIO_Init
+	addw	sp, #4
+;	main.c: 20: while( 1 ){
+00103$:
+;	main.c: 22: GPIO_WriteLow(GPIOD, GPIO_PIN_0);
+	push	#0x01
+	push	#0x0f
+	push	#0x50
+	call	_GPIO_WriteLow
+	addw	sp, #3
+;	main.c: 24: for(i=0;i<10000;i++) // A delay loop
+	ldw	x, #0x2710
+00107$:
+;	main.c: 26: nop();
+	nop
+	decw	x
+;	main.c: 24: for(i=0;i<10000;i++) // A delay loop
+	tnzw	x
+	jrne	00107$
+;	main.c: 28: GPIO_WriteHigh(GPIOD, GPIO_PIN_0);
+	push	#0x01
+	push	#0x0f
+	push	#0x50
+	call	_GPIO_WriteHigh
+	addw	sp, #3
+;	main.c: 30: halt();/* Program halted */
 	halt
-	jra	00102$
+	jra	00103$
+	ret
+;	main.c: 35: static void CLK_Config(void){
+;	-----------------------------------------
+;	 function CLK_Config
+;	-----------------------------------------
+_CLK_Config:
+;	main.c: 37: CLK_HSIPrescalerConfig(CLK_PRESCALER_CPUDIV128);
+	push	#0x87
+	call	_CLK_HSIPrescalerConfig
+	pop	a
 	ret
 	.area CODE
 	.area INITIALIZER

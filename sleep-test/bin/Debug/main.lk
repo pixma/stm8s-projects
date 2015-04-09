@@ -11,5 +11,6 @@ obj\Debug\src\stdafx.rel
 obj\Debug\src\stm8s_awu.rel
 obj\Debug\src\stm8s_clk.rel
 obj\Debug\src\stm8s_gpio.rel
+obj\Debug\src\stm8s_tim3.rel
 
 -e

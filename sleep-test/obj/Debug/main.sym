@@ -8,6 +8,12 @@ Symbol Table
     .__.CPU.                                                    =  000000 L
     .__.H$L.                                                    =  000001 L
     _AWU_Config                                                    ****** GX
+  8 _CLK_Config                                                    00003B R
+    _CLK_HSIPrescalerConfig                                        ****** GX
+    _GPIO_DeInit                                                   ****** GX
+    _GPIO_Init                                                     ****** GX
+    _GPIO_WriteHigh                                                ****** GX
+    _GPIO_WriteLow                                                 ****** GX
   5 __interrupt_vect                                               000000 R
   6 __sdcc_gs_init_startup                                         000000 R
   6 __sdcc_init_data                                               000000 R
@@ -35,7 +41,7 @@ Area Table
    5 HOME                                       size     83   flags    0
    6 GSINIT                                     size     1A   flags    0
    7 GSFINAL                                    size      3   flags    0
-   8 CODE                                       size      7   flags    0
+   8 CODE                                       size     42   flags    0
    9 INITIALIZER                                size      0   flags    0
    A CABS                                       size      0   flags    8
 

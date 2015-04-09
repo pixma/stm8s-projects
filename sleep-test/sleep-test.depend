@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1428571742 source:d:\repos\stm8-repo-play\sleep-test\main.c
+1428579598 source:d:\repos\stm8-repo-play\sleep-test\main.c
 	"stdafx.h"
 
 1428571742 d:\repos\stm8-repo-play\sleep-test\inc\stm8s.h
@@ -19,11 +19,12 @@
 1428571742 d:\repos\stm8-repo-play\sleep-test\inc\stm8s_gpio.h
 	"stm8s.h"
 
-1428571742 d:\repos\stm8-repo-play\sleep-test\inc\stdafx.h
+1428576140 d:\repos\stm8-repo-play\sleep-test\inc\stdafx.h
 	"stm8s.h"
 	"stm8s_clk.h"
 	"stm8s_awu.h"
 	"stm8s_gpio.h"
+	"stm8s_tim3.h"
 
 1428571742 source:d:\repos\stm8-repo-play\sleep-test\src\stm8s_gpio.c
 	"stm8s_gpio.h"
@@ -34,12 +35,18 @@
 1428571742 d:\repos\stm8-repo-play\sleep-test\inc\stm8s_awu.h
 	"stm8s.h"
 
-1428571742 d:\repos\stm8-repo-play\sleep-test\inc\stm8s_clk.h
+1413892940 d:\repos\stm8-repo-play\sleep-test\inc\stm8s_clk.h
 	"stm8s.h"
 
-1428571742 source:d:\repos\stm8-repo-play\sleep-test\src\stdafx.c
+1428579971 source:d:\repos\stm8-repo-play\sleep-test\src\stdafx.c
 	"stdafx.h"
 
 1428571742 source:d:\repos\stm8-repo-play\sleep-test\src\stm8s_clk.c
 	"stm8s_clk.h"
+
+1413892940 d:\repos\stm8-repo-play\sleep-test\inc\stm8s_tim3.h
+	"stm8s.h"
+
+1413892940 source:d:\repos\stm8-repo-play\sleep-test\src\stm8s_tim3.c
+	"stm8s_tim3.h"
 
