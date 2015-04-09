@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1428128769 source:c:\users\annim\documents\codeblocks\demotry\testprojectstm8s\src\main.c
+	"stm8s.h"
+
+1428054892 c:\users\annim\documents\codeblocks\demotry\testprojectstm8s\inc\stm8s.h
+	<stdint.h>
+	"stm8s_conf.h"
+	<intrins.h>
+	<intrinsics.h>
+
+1428130793 c:\users\annim\documents\codeblocks\demotry\testprojectstm8s\inc\stm8s_conf.h
+	"stm8s.h"
+	"stm8s_can.h"
+	"stm8s_gpio.h"
+	"stm8s_tim5.h"
+	"stm8s_tim6.h"
+	"stm8s_uart3.h"
+
+1413892940 c:\users\annim\documents\codeblocks\demotry\testprojectstm8s\inc\stm8s_gpio.h
+	"stm8s.h"
+
+1413892940 source:c:\users\annim\documents\codeblocks\demotry\testprojectstm8s\src\stm8s_gpio.c
+	"stm8s_gpio.h"
+

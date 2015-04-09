@@ -1,0 +1,43 @@
+# depslib dependency file v1.0
+1428061186 source:c:\users\annim\documents\codeblocks\basicleduart\sourceproject\main.c
+	"stm8s.h"
+	"stm8s_gpio.h"
+	"stm8s_clk.h"
+	"stm8s_uart2.h"
+	"stdafx.h"
+
+1428054892 c:\users\annim\documents\codeblocks\basicleduart\sourceproject\stm8s.h
+	<stdint.h>
+	"stm8s_conf.h"
+	<intrins.h>
+	<intrinsics.h>
+
+1428060548 c:\users\annim\documents\codeblocks\basicleduart\sourceproject\stm8s_conf.h
+	"stm8s.h"
+	"stm8s_clk.h"
+	"stm8s_gpio.h"
+	"stm8s_tim5.h"
+	"stm8s_tim6.h"
+	"stm8s_uart2.h"
+	"stm8s_uart3.h"
+
+1413892940 c:\users\annim\documents\codeblocks\basicleduart\sourceproject\stm8s_gpio.h
+	"stm8s.h"
+
+1413892940 source:c:\users\annim\documents\codeblocks\basicleduart\sourceproject\stm8s_gpio.c
+	"stm8s_gpio.h"
+
+1413892940 c:\users\annim\documents\codeblocks\basicleduart\sourceproject\stm8s_clk.h
+	"stm8s.h"
+
+1413892940 c:\users\annim\documents\codeblocks\basicleduart\sourceproject\stm8s_uart2.h
+	"stm8s.h"
+
+1413892940 source:c:\users\annim\documents\codeblocks\basicleduart\sourceproject\stm8s_clk.c
+	"stm8s_clk.h"
+
+1413892940 source:c:\users\annim\documents\codeblocks\basicleduart\sourceproject\stm8s_uart2.c
+	"stm8s_uart2.h"
+
+1428060797 c:\users\annim\documents\codeblocks\basicleduart\sourceproject\stdafx.h
+

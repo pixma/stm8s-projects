@@ -1,0 +1,14 @@
+-muwx
+-i bin\Debug\main.hex
+-Y
+-b HOME = 0x8000
+-b DATA = 0x0001
+-k C:\Program Files\sdcc\lib
+-k C:\Program Files\SDCC\bin\..\lib\stm8
+-l ..\..\..\..\..\..\Program Files\SDCC\lib\stm8\stm8.lib
+obj\Debug\main.rel
+obj\Debug\stm8s_clk.rel
+obj\Debug\stm8s_gpio.rel
+obj\Debug\stm8s_uart2.rel
+
+-e
