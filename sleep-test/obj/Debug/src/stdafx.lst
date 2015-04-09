@@ -1,0 +1,100 @@
+                                      1 ;--------------------------------------------------------
+                                      2 ; File Created by SDCC : free open source ANSI-C Compiler
+                                      3 ; Version 3.4.0 #8981 (Apr  5 2014) (MINGW32)
+                                      4 ; This file was generated Thu Apr 09 14:44:44 2015
+                                      5 ;--------------------------------------------------------
+                                      6 	.module stdafx
+                                      7 	.optsdcc -mstm8
+                                      8 	
+                                      9 ;--------------------------------------------------------
+                                     10 ; Public variables in this module
+                                     11 ;--------------------------------------------------------
+                                     12 	.globl _AWU_LSICalibrationConfig
+                                     13 	.globl _AWU_Init
+                                     14 	.globl _CLK_GetClockFreq
+                                     15 	.globl _AWU_Config
+                                     16 	.globl _LSIMeasurment
+                                     17 ;--------------------------------------------------------
+                                     18 ; ram data
+                                     19 ;--------------------------------------------------------
+                                     20 	.area DATA
+                                     21 ;--------------------------------------------------------
+                                     22 ; ram data
+                                     23 ;--------------------------------------------------------
+                                     24 	.area INITIALIZED
+                                     25 ;--------------------------------------------------------
+                                     26 ; absolute external ram data
+                                     27 ;--------------------------------------------------------
+                                     28 	.area DABS (ABS)
+                                     29 ;--------------------------------------------------------
+                                     30 ; global & static initialisations
+                                     31 ;--------------------------------------------------------
+                                     32 	.area HOME
+                                     33 	.area GSINIT
+                                     34 	.area GSFINAL
+                                     35 	.area GSINIT
+                                     36 ;--------------------------------------------------------
+                                     37 ; Home
+                                     38 ;--------------------------------------------------------
+                                     39 	.area HOME
+                                     40 	.area HOME
+                                     41 ;--------------------------------------------------------
+                                     42 ; code
+                                     43 ;--------------------------------------------------------
+                                     44 	.area CODE
+                                     45 ;	src\stdafx.c: 10: void AWU_Config(void){
+                                     46 ;	-----------------------------------------
+                                     47 ;	 function AWU_Config
+                                     48 ;	-----------------------------------------
+      000000                         49 _AWU_Config:
+                                     50 ;	src\stdafx.c: 13: AWU_LSICalibrationConfig(LSIMeasurment());
+      000000 CDr00r12         [ 4]   51 	call	_LSIMeasurment
+      000003 89               [ 2]   52 	pushw	x
+      000004 90 89            [ 2]   53 	pushw	y
+      000006 CDr00r00         [ 4]   54 	call	_AWU_LSICalibrationConfig
+      000009 5B 04            [ 2]   55 	addw	sp, #4
+                                     56 ;	src\stdafx.c: 16: AWU_Init(AWU_TIMEBASE_30S);
+      00000B 4B 10            [ 1]   57 	push	#0x10
+      00000D CDr00r00         [ 4]   58 	call	_AWU_Init
+      000010 84               [ 1]   59 	pop	a
+      000011 81               [ 4]   60 	ret
+                                     61 ;	src\stdafx.c: 20: uint32_t LSIMeasurment(void){
+                                     62 ;	-----------------------------------------
+                                     63 ;	 function LSIMeasurment
+                                     64 ;	-----------------------------------------
+      000012                         65 _LSIMeasurment:
+      000012 52 08            [ 2]   66 	sub	sp, #8
+                                     67 ;	src\stdafx.c: 27: fmaster = CLK_GetClockFreq();
+      000014 CDr00r00         [ 4]   68 	call	_CLK_GetClockFreq
+      000017 1F 03            [ 2]   69 	ldw	(0x03, sp), x
+                                     70 ;	src\stdafx.c: 30: AWU->CSR |= AWU_CSR_MSR;
+      000019 72 10 50 F0      [ 1]   71 	bset	0x50f0, #0
+                                     72 ;	src\stdafx.c: 32: lsi_freq_hz = (8 * fmaster) / (ICValue2 - ICValue1);
+      00001D 1E 03            [ 2]   73 	ldw	x, (0x03, sp)
+      00001F A6 03            [ 1]   74 	ld	a, #0x03
+      000021 4D               [ 1]   75 	tnz	a
+      000022 27 06            [ 1]   76 	jreq	00104$
+      000024                         77 00103$:
+      000024 58               [ 2]   78 	sllw	x
+      000025 90 59            [ 2]   79 	rlcw	y
+      000027 4A               [ 1]   80 	dec	a
+      000028 26 FA            [ 1]   81 	jrne	00103$
+      00002A                         82 00104$:
+      00002A 4B 00            [ 1]   83 	push	#0x00
+      00002C 4B 00            [ 1]   84 	push	#0x00
+      00002E 4B 00            [ 1]   85 	push	#0x00
+      000030 4B 00            [ 1]   86 	push	#0x00
+      000032 89               [ 2]   87 	pushw	x
+      000033 90 89            [ 2]   88 	pushw	y
+      000035 CDr00r00         [ 4]   89 	call	__divulong
+      000038 5B 08            [ 2]   90 	addw	sp, #8
+      00003A 1F 07            [ 2]   91 	ldw	(0x07, sp), x
+                                     92 ;	src\stdafx.c: 35: AWU->CSR &= (uint8_t)(~AWU_CSR_MSR);
+      00003C 72 11 50 F0      [ 1]   93 	bres	0x50f0, #0
+                                     94 ;	src\stdafx.c: 36: return (lsi_freq_hz);
+      000040 1E 07            [ 2]   95 	ldw	x, (0x07, sp)
+      000042 5B 08            [ 2]   96 	addw	sp, #8
+      000044 81               [ 4]   97 	ret
+                                     98 	.area CODE
+                                     99 	.area INITIALIZER
+                                    100 	.area CABS (ABS)
