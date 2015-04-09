@@ -7,13 +7,15 @@
 		<Option compiler="sdcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/sleep-test" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Debug/main.hex" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="" />
 				<Option object_output="obj/Debug/" />
-				<Option type="1" />
+				<Option type="5" />
 				<Option compiler="sdcc" />
-				<Compiler>
-					<Add option="--debug" />
-				</Compiler>
+				<ExtraCommands>
+					<Add after="C:\Program Files\STMicroelectronics\st_toolset\stvp\STVP_CmdLine.exe -BoardName=ST-LINK -Port=USB -ProgMode=SWIM -Device=STM8S105x6 -readData -readOption -no_progData -no_progOption -no_loop -no_log -FileProg=.\bin\Debug\main.hex" />
+					<Mode after="always" />
+				</ExtraCommands>
 			</Target>
 			<Target title="Release">
 				<Option output="bin/Release/sleep-test" prefix_auto="1" extension_auto="1" />
@@ -25,6 +27,34 @@
 				</Compiler>
 			</Target>
 		</Build>
+		<Compiler>
+			<Add option="-mstm8" />
+			<Add directory="inc" />
+		</Compiler>
+		<Linker>
+			<Add library="C:\Program Files\SDCC\lib\stm8\stm8.lib" />
+		</Linker>
+		<Unit filename="inc/stdafx.h" />
+		<Unit filename="inc/stm8s.h" />
+		<Unit filename="inc/stm8s_awu.h" />
+		<Unit filename="inc/stm8s_clk.h" />
+		<Unit filename="inc/stm8s_conf.h" />
+		<Unit filename="inc/stm8s_gpio.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/stdafx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/stm8s_awu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/stm8s_clk.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/stm8s_gpio.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Extensions>
 			<code_completion />
 			<envvars />

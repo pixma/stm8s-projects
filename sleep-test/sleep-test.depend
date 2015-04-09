@@ -1,14 +1,14 @@
 # depslib dependency file v1.0
-1428568621 source:d:\repos\stm8-repo-play\sleep-test\main.c
+1428571742 source:d:\repos\stm8-repo-play\sleep-test\main.c
 	"stdafx.h"
 
-1428563924 d:\repos\stm8-repo-play\sleep-test\inc\stm8s.h
+1428571742 d:\repos\stm8-repo-play\sleep-test\inc\stm8s.h
 	<stdint.h>
 	"stm8s_conf.h"
 	<intrins.h>
 	<intrinsics.h>
 
-1428563924 d:\repos\stm8-repo-play\sleep-test\inc\stm8s_conf.h
+1428571742 d:\repos\stm8-repo-play\sleep-test\inc\stm8s_conf.h
 	"stm8s.h"
 	"stm8s_can.h"
 	"stm8s_gpio.h"
@@ -16,30 +16,30 @@
 	"stm8s_tim6.h"
 	"stm8s_uart3.h"
 
-1428563924 d:\repos\stm8-repo-play\sleep-test\inc\stm8s_gpio.h
+1428571742 d:\repos\stm8-repo-play\sleep-test\inc\stm8s_gpio.h
 	"stm8s.h"
 
-1428567241 d:\repos\stm8-repo-play\sleep-test\inc\stdafx.h
+1428571742 d:\repos\stm8-repo-play\sleep-test\inc\stdafx.h
 	"stm8s.h"
 	"stm8s_clk.h"
 	"stm8s_awu.h"
 	"stm8s_gpio.h"
 
-1428563925 source:d:\repos\stm8-repo-play\sleep-test\src\stm8s_gpio.c
+1428571742 source:d:\repos\stm8-repo-play\sleep-test\src\stm8s_gpio.c
 	"stm8s_gpio.h"
 
-1413892940 source:d:\repos\stm8-repo-play\sleep-test\src\stm8s_awu.c
+1428571742 source:d:\repos\stm8-repo-play\sleep-test\src\stm8s_awu.c
 	"stm8s_awu.h"
 
-1413892940 d:\repos\stm8-repo-play\sleep-test\inc\stm8s_awu.h
+1428571742 d:\repos\stm8-repo-play\sleep-test\inc\stm8s_awu.h
 	"stm8s.h"
 
-1428563925 d:\repos\stm8-repo-play\sleep-test\inc\stm8s_clk.h
+1428571742 d:\repos\stm8-repo-play\sleep-test\inc\stm8s_clk.h
 	"stm8s.h"
 
-1428570879 source:d:\repos\stm8-repo-play\sleep-test\src\stdafx.c
+1428571742 source:d:\repos\stm8-repo-play\sleep-test\src\stdafx.c
 	"stdafx.h"
 
-1428563925 source:d:\repos\stm8-repo-play\sleep-test\src\stm8s_clk.c
+1428571742 source:d:\repos\stm8-repo-play\sleep-test\src\stm8s_clk.c
 	"stm8s_clk.h"
 
