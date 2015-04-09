@@ -40,6 +40,7 @@
 		<Unit filename="inc/stm8s_clk.h" />
 		<Unit filename="inc/stm8s_conf.h" />
 		<Unit filename="inc/stm8s_gpio.h" />
+		<Unit filename="inc/stm8s_tim3.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -53,6 +54,9 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="src/stm8s_gpio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/stm8s_tim3.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Extensions>
