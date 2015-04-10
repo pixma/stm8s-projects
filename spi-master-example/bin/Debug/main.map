@@ -1,0 +1,207 @@
+ASxxxx Linker V03.00 + NoICE + sdld,  page 1.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CABS                                00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00000000  l_BIT_BANK                      
+     00000000  l_BSEG                          
+     00000000  l_BSEG_BYTES                    
+     00000000  l_CABS                          
+     00000000  l_DABS                          
+     00000000  l_DATA                          
+     00000000  l_INITIALIZED                   
+     00000000  l_INITIALIZER                   
+     00000000  l_ISEG                          
+     00000000  l_OSEG                          
+     00000000  l_REG_BANK_0                    
+     00000000  l_REG_BANK_1                    
+     00000000  l_REG_BANK_2                    
+     00000000  l_REG_BANK_3                    
+     00000000  l__CODE                         
+     00000000  s_BSEG                          
+     00000000  s_CABS                          
+     00000000  s_DABS                          
+     00000000  s_DSEG                          
+     00000000  s_REG_BANK_0                    
+     00000000  s_SSEG                          
+     00000001  s_DATA                          
+     00000001  s_INITIALIZED                   
+     00000003  l_GSFINAL                       
+     00000008  s_REG_BANK_1                    
+     00000010  s_REG_BANK_2                    
+     00000018  s_BIT_BANK                      
+     00000018  s_ISEG                          
+     00000018  s_OSEG                          
+     00000018  s_REG_BANK_3                    
+     0000001A  l_GSINIT                        
+     00000020  s_BSEG_BYTES                    
+     00000020  s__CODE                         
+     00000080  l_DSEG                          
+     00000083  l_HOME                          
+     00000100  l_IRAM                          
+     00000100  l_SSEG                          
+     00000775  l_CODE                          
+     00008000  s_HOME                          
+     00008083  s_GSINIT                        
+     0000809D  s_GSFINAL                       
+     000080A0  s_CODE                          
+     00008815  s_INITIALIZER                   
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 2.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00000000  .__.ABS.                           _divulong
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 3.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+DSEG                                00000000    00000080 =         128. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00 + NoICE + sdld,  page 4.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+SSEG                                00000000    00000100 =         256. bytes (REL,OVR)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00 + NoICE + sdld,  page 5.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+HOME                                00008000    00000083 =         131. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00 + NoICE + sdld,  page 6.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSINIT                              00008083    0000001A =          26. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00 + NoICE + sdld,  page 7.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSFINAL                             0000809D    00000003 =           3. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00 + NoICE + sdld,  page 8.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080A0    00000775 =        1909. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000080A0  _main                              main
+     000080EB  _init_spi                          stdafx
+     0000812A  _spi_write_data_8t                 stdafx
+     00008157  _CLK_DeInit                        stm8s_clk
+     00008199  _CLK_FastHaltWakeUpCmd             stm8s_clk
+     000081AE  _CLK_HSECmd                        stm8s_clk
+     000081C0  _CLK_HSICmd                        stm8s_clk
+     000081D2  _CLK_LSICmd                        stm8s_clk
+     000081E7  _CLK_CCOCmd                        stm8s_clk
+     000081F9  _CLK_ClockSwitchCmd                stm8s_clk
+     0000820E  _CLK_SlowActiveHaltWakeUpCmd       stm8s_clk
+     00008223  _CLK_PeripheralClockConfig         stm8s_clk
+     0000827B  _CLK_ClockSwitchConfig             stm8s_clk
+     00008345  _CLK_HSIPrescalerConfig            stm8s_clk
+     00008357  _CLK_CCOConfig                     stm8s_clk
+     0000836D  _CLK_ITConfig                      stm8s_clk
+     000083BD  _CLK_SYSCLKConfig                  stm8s_clk
+     000083F7  _CLK_SWIMConfig                    stm8s_clk
+     00008409  _CLK_ClockSecuritySystemEnable     stm8s_clk
+     0000840E  _CLK_GetSYSCLKSource               stm8s_clk
+     00008413  _CLK_GetClockFreq                  stm8s_clk
+     0000846B  _CLK_AdjustHSICalibrationValue     stm8s_clk
+     00008478  _CLK_SYSCLKEmergencyClear          stm8s_clk
+     0000847D  _CLK_GetFlagStatus                 stm8s_clk
+     000084C3  _CLK_GetITStatus                   stm8s_clk
+     000084EA  _CLK_ClearITPendingBit             stm8s_clk
+     00008501  _HSIDivFactor                      stm8s_clk
+     00008505  _CLKPrescTable                     stm8s_clk
+     0000850D  _GPIO_DeInit                       stm8s_gpio
+     00008520  _GPIO_Init                         stm8s_gpio
+     000085A0  _GPIO_Write                        stm8s_gpio
+     000085A6  _GPIO_WriteHigh                    stm8s_gpio
+     000085AD  _GPIO_WriteLow                     stm8s_gpio
+     000085BB  _GPIO_WriteReverse                 stm8s_gpio
+     000085C2  _GPIO_ReadOutputData               stm8s_gpio
+     000085C6  _GPIO_ReadInputData                stm8s_gpio
+     000085CB  _GPIO_ReadInputPin                 stm8s_gpio
+     000085D2  _GPIO_ExternalPullUpConfig         stm8s_gpio
+     000085ED  _SPI_DeInit                        stm8s_spi
+     00008606  _SPI_Init                          stm8s_spi
+     00008644  _SPI_Cmd                           stm8s_spi
+     00008659  _SPI_ITConfig                      stm8s_spi
+     0000868F  _SPI_SendData                      stm8s_spi
+     00008696  _SPI_ReceiveData                   stm8s_spi
+     0000869B  _SPI_NSSInternalSoftwareCmd        stm8s_spi
+     000086AD  _SPI_TransmitCRC                   stm8s_spi
+     000086B5  _SPI_CalculateCRCCmd               stm8s_spi
+     000086CA  _SPI_GetCRC                        stm8s_spi
+     000086D9  _SPI_ResetCRC                      stm8s_spi
+     000086E6  _SPI_GetCRCPolynomial              stm8s_spi
+ASxxxx Linker V03.00 + NoICE + sdld,  page 9.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CODE                                000080A0    00000775 =        1909. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000086EB  _SPI_BiDirectionalLineConfig       stm8s_spi
+     00008700  _SPI_GetFlagStatus                 stm8s_spi
+     0000870F  _SPI_ClearFlag                     stm8s_spi
+     00008717  _SPI_GetITStatus                   stm8s_spi
+     0000875B  _SPI_ClearITPendingBit             stm8s_spi
+     00008776  __divulong                         _divulong
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 10.
+
+Files Linked                              [ module(s) ]
+
+obj\Debug\main.rel                        [  ]
+obj\Debug\src\stdafx.rel                  [  ]
+obj\Debug\src\stm8s_clk.rel               [  ]
+obj\Debug\src\stm8s_gpio.rel              [  ]
+obj\Debug\src\stm8s_spi.rel               [  ]
+
+
+Libraries Linked                          [ object file ]
+
+C:\Program Files\SDCC\lib\stm8\stm8.lib   [ _divulong.rel ]
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 11.
+
+User Base Address Definitions
+
+HOME = 0x8000
+DATA = 0x0001
+
+

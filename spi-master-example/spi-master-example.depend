@@ -1,0 +1,45 @@
+# depslib dependency file v1.0
+1428581641 source:d:\repos\stm8-repo-play\spi-master-example\src\stm8s_clk.c
+	"stm8s_clk.h"
+
+1428581641 d:\repos\stm8-repo-play\spi-master-example\inc\stm8s_clk.h
+	"stm8s.h"
+
+1428581641 d:\repos\stm8-repo-play\spi-master-example\inc\stm8s.h
+	<stdint.h>
+	"stm8s_conf.h"
+	<intrins.h>
+	<intrinsics.h>
+
+1428581641 d:\repos\stm8-repo-play\spi-master-example\inc\stm8s_conf.h
+	"stm8s.h"
+	"stm8s_can.h"
+	"stm8s_gpio.h"
+	"stm8s_tim5.h"
+	"stm8s_tim6.h"
+	"stm8s_uart3.h"
+
+1428581641 d:\repos\stm8-repo-play\spi-master-example\inc\stm8s_gpio.h
+	"stm8s.h"
+
+1428581641 source:d:\repos\stm8-repo-play\spi-master-example\src\stm8s_gpio.c
+	"stm8s_gpio.h"
+
+1428653906 source:d:\repos\stm8-repo-play\spi-master-example\main.c
+	"stdafx.h"
+
+1428653862 d:\repos\stm8-repo-play\spi-master-example\inc\stdafx.h
+	"stm8s.h"
+	"stm8s_clk.h"
+	"stm8s_gpio.h"
+	"stm8s_spi.h"
+
+1413892940 d:\repos\stm8-repo-play\spi-master-example\inc\stm8s_spi.h
+	"stm8s.h"
+
+1413892940 source:d:\repos\stm8-repo-play\spi-master-example\src\stm8s_spi.c
+	"stm8s_spi.h"
+
+1428653887 source:d:\repos\stm8-repo-play\spi-master-example\src\stdafx.c
+	"stdafx.h"
+

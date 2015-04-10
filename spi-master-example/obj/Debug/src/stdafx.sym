@@ -1,0 +1,37 @@
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 1.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+    .__.$$$.                                                    =  002710 L
+    .__.ABS.                                                    =  000000 G
+    .__.CPU.                                                    =  000000 L
+    .__.H$L.                                                    =  000001 L
+    _CLK_PeripheralClockConfig                                     ****** GX
+    _GPIO_ExternalPullUpConfig                                     ****** GX
+    _GPIO_Init                                                     ****** GX
+    _GPIO_WriteHigh                                                ****** GX
+    _SPI_Cmd                                                       ****** GX
+    _SPI_GetFlagStatus                                             ****** GX
+    _SPI_Init                                                      ****** GX
+    _SPI_SendData                                                  ****** GX
+  7 _init_spi                                                      000000 GR
+  7 _spi_write_data_8t                                             00003F GR
+
+
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 2.
+Hexadecimal [24-Bits]
+
+Area Table
+
+   0 _CODE                                      size      0   flags    0
+   1 DATA                                       size      0   flags    0
+   2 INITIALIZED                                size      0   flags    0
+   3 DABS                                       size      0   flags    8
+   4 HOME                                       size      0   flags    0
+   5 GSINIT                                     size      0   flags    0
+   6 GSFINAL                                    size      0   flags    0
+   7 CODE                                       size     6C   flags    0
+   8 INITIALIZER                                size      0   flags    0
+   9 CABS                                       size      0   flags    8
+
