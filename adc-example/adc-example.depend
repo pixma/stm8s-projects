@@ -1,0 +1,40 @@
+# depslib dependency file v1.0
+1413892940 source:d:\repos\stm8-repo-play\adc-example\stm8s_adc1.c
+	"stm8s_adc1.h"
+
+1413892940 d:\repos\stm8-repo-play\adc-example\stm8s_adc1.h
+	"stm8s.h"
+
+1428563925 d:\repos\stm8-repo-play\adc-example\stm8s.h
+	<stdint.h>
+	"stm8s_conf.h"
+	<intrins.h>
+	<intrinsics.h>
+
+1428563925 d:\repos\stm8-repo-play\adc-example\stm8s_conf.h
+	"stm8s.h"
+	"stm8s_clk.h"
+	"stm8s_gpio.h"
+	"stm8s_tim5.h"
+	"stm8s_tim6.h"
+	"stm8s_uart2.h"
+	"stm8s_uart3.h"
+
+1428563925 d:\repos\stm8-repo-play\adc-example\stm8s_clk.h
+	"stm8s.h"
+
+1428563925 d:\repos\stm8-repo-play\adc-example\stm8s_gpio.h
+	"stm8s.h"
+
+1428563925 d:\repos\stm8-repo-play\adc-example\stm8s_uart2.h
+	"stm8s.h"
+
+1428563925 source:d:\repos\stm8-repo-play\adc-example\stm8s_clk.c
+	"stm8s_clk.h"
+
+1428563925 source:d:\repos\stm8-repo-play\adc-example\stm8s_gpio.c
+	"stm8s_gpio.h"
+
+1428563925 source:d:\repos\stm8-repo-play\adc-example\stm8s_uart2.c
+	"stm8s_uart2.h"
+

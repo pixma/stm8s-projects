@@ -1,0 +1,48 @@
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 1.
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+    .__.$$$.                                                    =  002710 L
+    .__.ABS.                                                    =  000000 G
+    .__.CPU.                                                    =  000000 L
+    .__.H$L.                                                    =  000001 L
+  7 _ADC1_AWDChannelConfig                                         000241 GR
+  7 _ADC1_ClearFlag                                                0003DD GR
+  7 _ADC1_ClearITPendingBit                                        0004AA GR
+  7 _ADC1_Cmd                                                      000065 GR
+  7 _ADC1_ConversionConfig                                         000175 GR
+  7 _ADC1_DataBufferCmd                                            00008C GR
+  7 _ADC1_DeInit                                                   000000 GR
+  7 _ADC1_ExternalTriggerConfig                                    0001AE GR
+  7 _ADC1_GetAWDChannelStatus                                      00033B GR
+  7 _ADC1_GetBufferValue                                           0002CC GR
+  7 _ADC1_GetConversionValue                                       0001D9 GR
+  7 _ADC1_GetFlagStatus                                            000378 GR
+  7 _ADC1_GetITStatus                                              00044F GR
+  7 _ADC1_ITConfig                                                 00009E GR
+  7 _ADC1_Init                                                     000035 GR
+  7 _ADC1_PrescalerConfig                                          0000C4 GR
+  7 _ADC1_ScanModeCmd                                              000077 GR
+  7 _ADC1_SchmittTriggerConfig                                     0000D6 GR
+  7 _ADC1_SetHighThreshold                                         0002AC GR
+  7 _ADC1_SetLowThreshold                                          0002BC GR
+  7 _ADC1_StartConversion                                          0001D4 GR
+
+
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (STMicroelectronics STM8), page 2.
+Hexadecimal [24-Bits]
+
+Area Table
+
+   0 _CODE                                      size      0   flags    0
+   1 DATA                                       size      0   flags    0
+   2 INITIALIZED                                size      0   flags    0
+   3 DABS                                       size      0   flags    8
+   4 HOME                                       size      0   flags    0
+   5 GSINIT                                     size      0   flags    0
+   6 GSFINAL                                    size      0   flags    0
+   7 CODE                                       size    514   flags    0
+   8 INITIALIZER                                size      0   flags    0
+   9 CABS                                       size      0   flags    8
+
